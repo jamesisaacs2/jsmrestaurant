@@ -44,7 +44,7 @@
 
 .app__navbar-login a {
 	margin: 0 1rem;
-	text-direction: none;
+	flex-direction: none;
 	transition: 1s ease;
 }
 
