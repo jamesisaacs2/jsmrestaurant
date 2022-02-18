@@ -51,3 +51,29 @@
 	margin: 2rem 0;
 	color: var(--color-grey);
 }
+
+@media screen and (max-width: 2000px) {
+	.app__aboutus-content_knife img {
+		height: 1110px;
+	}
+	.app__aboutus-content_about p,
+	.app__aboutus-content_history p {
+		margin: 4rem 0;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.app__aboutus-content {
+		flex-direction: column;
+	}
+	.app__aboutus-content_knife {
+		margin: 4rem 0;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.app__aboutus-overlay img {
+		width: 80%;
+		height: 320px;
+	}
+}

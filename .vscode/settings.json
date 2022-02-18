@@ -6,5 +6,11 @@
 	"editor.formatOnSave": true,
 	"editor.formatOnPaste": true,
 	"editor.minimap.maxColumn": 57,
-	"liveshare.sharedTerminalWidth": 100
+	"liveshare.sharedTerminalWidth": 100,
+	"editor.wordWrapColumn": 77,
+	"editor.wrappingIndent": "deepIndent",
+	"editor.tabCompletion": "on",
+	"editor.scrollbar.verticalScrollbarSize": 12,
+	"editor.linkedEditing": true,
+	"editor.trimAutoWhitespace": false
 }
