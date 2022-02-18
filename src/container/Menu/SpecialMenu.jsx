@@ -7,7 +7,7 @@ import "./SpecialMenu.css";
 const SpecialMenu = () => (
 	<div className="app__specialMenu flex__center section__padding" id="menu">
 		<div className="app__specialMenu-title">
-			<SubHeading title="Menu that fits your palette"></SubHeading>
+			<SubHeading title="The menu that suits your palette"></SubHeading>
 			<h1 className="headtext__cormorant">Today's Special</h1>
 		</div>
 		<div className="app__specialMenu-menu">
@@ -15,29 +15,38 @@ const SpecialMenu = () => (
 				<p className="app__specialMenu-menu_heading">Wine & Beer</p>
 				<div className="app__specialMenu-menu_items">
 					{data.wines.map((wine, index) => (
-						<p>{wine.title}</p>
+						<MenuItem
+							key={wine.title + index}
+							title={wine.title}
+							price={wine.price}
+							tags={wine.tags}
+						/>
 					))}
 				</div>
 			</div>
 
-			<div className="app__specialmenu-menu_img">
-				<img src={images.menu} alt="menu img" />
+			<div className="app__specialMenu-menu_img">
+				<img src={images.menu} alt="cocktails menu img" />
 			</div>
 
 			<div className="app__specialMenu-menu_cocktails flex__center">
-				<p className="app__specialMenu-menu_heading">Wine & Beer</p>
+				<p className="app__specialMenu-menu_heading">Cocktails</p>
 				<div className="app__specialMenu-menu_items">
 					{data.cocktails.map((cocktails, index) => (
-						<p>{cocktails.title}</p>
+						<MenuItem
+							key={cocktails.title + index}
+							title={cocktails.title}
+							price={cocktails.price}
+							tags={cocktails.tags}
+						/>
 					))}
 				</div>
 			</div>
-
-			<div style={{ marginTop: "15px" }}>
-				<button type="button" className="custom__button">
-					View More
-				</button>
-			</div>
+		</div>
+		<div style={{ marginTop: "5px" }}>
+			<button type="button" className="custom__button">
+				View More
+			</button>
 		</div>
 	</div>
 );
